@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Dosya İndirme Örneği</string>
+    <string name="some_error_occurred">Bir hata oluştu.</string>
+    <string name="start">BAŞLAT</string>
+    <string name="completed">TAMAMLANDI</string>
+    <string name="pause">DURAKLAT</string>
+    <string name="cancel">DURDUR</string>
+    <string name="resume">DEVAM ET</string>
+    <string name="not_started_download_size">0.00MB/0.00MB</string>
+</resources>
