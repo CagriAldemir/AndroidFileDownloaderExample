@@ -25,14 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
     private static String dirPath;
 
-    final String URL1 = "https://download.microsoft.com/download/c/2/8/c28cc7df-c9d2-453b-9292-ae7d242dfeca/SQLEXPR_x86_ENU.exe";
-    final String URL2 = "http://www.appsapk.com/downloading/latest/WeChat-6.5.7.apk";
-    final String URL3 = "http://www.appsapk.com/downloading/latest/Instagram.apk";
-    final String URL4 = "http://www.appsapk.com/downloading/latest/Emoji%20Flashlight%20-%20Brightest%20Flashlight%202018-2.0.1.apk";
-    final String URL5 = "http://www.appsapk.com/downloading/latest/Screen%20Recorder-7.7.apk";
+    final String URL1 = "https://raw.githubusercontent.com/CagriAldemir/AndroidFileDownloaderExample/master/Downloadable_Files/File1.zip";
+    final String URL2 = "https://raw.githubusercontent.com/CagriAldemir/AndroidFileDownloaderExample/master/Downloadable_Files/File2.zip";
+    final String URL3 = "https://raw.githubusercontent.com/CagriAldemir/AndroidFileDownloaderExample/master/Downloadable_Files/File3.zip";
+    final String URL4 = "https://raw.githubusercontent.com/CagriAldemir/AndroidFileDownloaderExample/master/Downloadable_Files/File4.zip";
+    final String URL5 = "https://raw.githubusercontent.com/CagriAldemir/AndroidFileDownloaderExample/master/Downloadable_Files/File5.zip";
 
 
     Button buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive;
+
     Button buttonCancelOne, buttonCancelTwo, buttonCancelThree, buttonCancelFour, buttonCancelFive;
 
     TextView textViewProgressOne, textViewProgressTwo, textViewProgressThree, textViewProgressFour, textViewProgressFive;
@@ -112,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                downloadIdOne = PRDownloader.download(URL1, dirPath, "facebook.apk")
+                downloadIdOne = PRDownloader.download(URL1, dirPath, "File1.zip")
                         .build()
                         .setOnStartOrResumeListener(new OnStartOrResumeListener() {
                             @Override
@@ -198,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                     PRDownloader.resume(downloadIdTwo);
                     return;
                 }
-                downloadIdTwo = PRDownloader.download(URL2, dirPath, "wechat.apk")
+                downloadIdTwo = PRDownloader.download(URL2, dirPath, "File2.zip")
                         .build()
                         .setOnStartOrResumeListener(new OnStartOrResumeListener() {
                             @Override
@@ -284,7 +285,7 @@ public class MainActivity extends AppCompatActivity {
                     PRDownloader.resume(downloadIdThree);
                     return;
                 }
-                downloadIdThree = PRDownloader.download(URL3, dirPath, "instagram.apk")
+                downloadIdThree = PRDownloader.download(URL3, dirPath, "File3.zip")
                         .build()
                         .setOnStartOrResumeListener(new OnStartOrResumeListener() {
                             @Override
@@ -370,7 +371,7 @@ public class MainActivity extends AppCompatActivity {
                     PRDownloader.resume(downloadIdFour);
                     return;
                 }
-                downloadIdFour = PRDownloader.download(URL4, dirPath, "flashlight.apk")
+                downloadIdFour = PRDownloader.download(URL4, dirPath, "File4.zip")
                         .build()
                         .setOnStartOrResumeListener(new OnStartOrResumeListener() {
                             @Override
@@ -456,7 +457,7 @@ public class MainActivity extends AppCompatActivity {
                     PRDownloader.resume(downloadIdFive);
                     return;
                 }
-                downloadIdFive = PRDownloader.download(URL5, dirPath, "screenrecorder.apk")
+                downloadIdFive = PRDownloader.download(URL5, dirPath, "File5.zip")
                         .build()
                         .setOnStartOrResumeListener(new OnStartOrResumeListener() {
                             @Override
